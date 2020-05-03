@@ -5,12 +5,321 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keyboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
 
+    <section class="section-main">
+        <div class="section-main__item section-main__item-input">
+            <label for="my-input" class="my-label">Введите текст</label>
+            <input id="my-input" type="text" placeholder="Введите текст">
+        </div>
 
+        <!-- line 2 -->
+        <div id="my-keyboard" class="section-main__item">
+            <div class="my-keyboard__line">
+                <div class="btn btn-symbol" data-keyCode='192'>
+                    <span>`</span>
+                    <span>~</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='49'>
+                    <span>!</span>
+                    <span>1</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='50'>
+                    <span>@</span>
+                    <span>2</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='51'>
+                    <span>#</span>
+                    <span>3</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='52'>
+                    <span>$</span>
+                    <span>4</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='53'>
+                    <span>%</span>
+                    <span>5</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='54'>
+                    <span>^</span>
+                    <span>6</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='55'>
+                    <span>&</span>
+                    <span>7</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='56'>
+                    <span>*</span>
+                    <span>8</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='57'>
+                    <span>(</span>
+                    <span>9</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='48'>
+                    <span>)</span>
+                    <span>0</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='173'>
+                    <span>_</span>
+                    <span>-</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='61'>
+                    <span>+</span>
+                    <span>=</span>
+                </div>
+
+                <div class="btn btn-symbol-backspace" data-keyCode='8'>
+                    <span>Backspace</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='36'>
+                    <span>home</span>
+                </div>
+            </div>
+
+            <!-- line 3 -->
+            <div class="my-keyboard__line">
+                <div class="btn btn-symbol-tab" data-keyCode='9'>
+                    <span>Tab</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='81'>
+                    <span>Q</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='87'>
+                    <span>W</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='69'>
+                    <span>E</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='82'>
+                    <span>R</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='84'>
+                    <span>T</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='89'>
+                    <span>Y</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='85'>
+                    <span>U</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='73'>
+                    <span>I</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='79'>
+                    <span>O</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='80'>
+                    <span>P</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='219'>
+                    <span>{</span>
+                    <span>[</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='221'>
+                    <span>}</span>
+                    <span>]</span>
+                </div>
+
+                <div class="btn btn-symbol-slash" data-keyCode='220'>
+                    <span>|</span>
+                    <span>\</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='35'>
+                    <span>end</span>
+                </div>
+            </div>
+
+            <!-- line 4 -->
+            <div class="my-keyboard__line">
+                <div class="btn btn-Caps-Lock" data-keyCode='20'>
+                    <span>Caps lock</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='65'>
+                    <span>A</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='83'>
+                    <span>S</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='68'>
+                    <span>D</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='70'>
+                    <span>F</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='71'>
+                    <span>G</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='72'>
+                    <span>H</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='74'>
+                    <span>J</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='75'>
+                    <span>K</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='76'>
+                    <span>L</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='59'>
+                    <span>:</span>
+                    <span>;</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='222'>
+                    <span>"</span>
+                    <span>'</span>
+                </div>
+
+                <div class="btn btn-symbol-enter" data-keyCode='13'>
+                    <span>enter</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='33'>
+                    <span>PgUp</span>
+                </div>
+            </div>
+
+            <!-- line 5 -->
+            <div class="my-keyboard__line">
+                <div class="btn btn-symbol-shift btn-symbol-shift-left">
+                    <span>Shift</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='90'>
+                    <span>Z</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='88'>
+                    <span>X</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='67'>
+                    <span>C</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='86'>
+                    <span>V</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='66'>
+                    <span>B</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='78'>
+                    <span>N</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='77'>
+                    <span>M</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='188'>
+                    <span>&lt;</span>
+                    <span>,</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='190'>
+                    <span>&gt;</span>
+                    <span>.</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='191'>
+                    <span>?</span>
+                    <span>/</span>
+                </div>
+
+                <div class="btn btn-symbol-shift btn-symbol-shift-rigth">
+                    <span>Shift</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='38'>
+                    <span>&#128897;</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='34'>
+                    <span>PgDn</span>
+                </div>
+            </div>
+
+            <!-- line 6 -->
+            <div class="my-keyboard__line">
+                <div class="btn btn-symbol-ctrl btn-symbol-ctrl-left">
+                    <span>Ctrl</span>
+                </div>
+
+                <div class="btn btn-symbol btn-symbol-alt" data-keyCode='18'>
+                    <span>Alt</span>
+                </div>
+
+                <div class="btn btn-symbol-space" data-keyCode='32'>
+                    <span></span>
+                </div>
+
+                <div class="btn btn-symbol btn-symbol-alt" data-keyCode='18'>
+                    <span>Alt</span>
+                </div>
+
+                <div class="btn btn-symbol-ctrl btn-symbol-ctrl-right">
+                    <span>Ctrl</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='37'>
+                    <span>&#128896;</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='40'>
+                    <span>&#128899;</span>
+                </div>
+
+                <div class="btn btn-symbol" data-keyCode='39'>
+                    <span>&#128898;</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <script src="script/script.js"></script>
 </body>

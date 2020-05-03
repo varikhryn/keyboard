@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 1920px;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: rgb(250, 248, 244);
+    padding: 50px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+.section-main{
+    width: 94%;
+    margin: 0 auto;
+}
+
+.section-main__item{
+    width: 100%;
+    position: relative;
+}
+
+.section-main__item input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(73, 74, 82);
+    padding: 10px 15px;
+    color: rgb(73, 74, 82);
+}
+
+.section-main__item input,
+.my-label{
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.section-main__item input::placeholder{
+    font-size: 18px;
+    color: rgba(73, 74, 82, 0.361);
+}
+
+.my-label{
+    position: absolute;
+    color: rgba(73, 74, 82, 0.361);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.my-label.active-input{
+    opacity: 0;
+    top: -30px;
+    left: 0;
+    opacity: 1;
+    transition: all .5s ease-in;
+}
+
+#my-keyboard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(73, 74, 82, 0.361);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.my-keyboard__line{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-bottom: 1vw;
+}
+
+.my-keyboard__line:last-of-type{
+    margin-bottom: 0;
+}
+
+.btn{
+    padding: 10px;
+    background-color: rgb(73, 74, 82);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid rgb(250, 248, 244);
+    border-radius: 10px;
+    transform: scale(1);
+}
+
+.btn-symbol,
+.btn-symbol-backspace,
+.btn-Caps-Lock,
+.btn-symbol-enter,
+.btn-symbol-tab,
+.btn-symbol-slash,
+.btn-symbol-shift-left,
+.btn-symbol-shift-rigth,
+.btn-symbol-ctrl-left,
+.btn-symbol-ctrl-right,
+.btn-symbol-space{
+    height: 5vw;
+    max-height: 96px;
+    margin-right: 1vw;
+}
+
+.btn-Caps-Lock,
+.btn-symbol-tab,
+.btn-symbol-shift-left,
+.btn-symbol-ctrl-left{
+    align-items: flex-start;
+}
+
+.btn-symbol-slash,
+.btn-symbol-backspace,
+.btn-symbol-enter,
+.btn-symbol-shift-rigth,
+.btn-symbol-ctrl-right{
+    align-items: flex-end;
+}
+
+.btn-symbol:last-of-type{
+    margin-right: 0;
+}
+
+.btn-symbol{
+    width: 5.5vw;
+    max-width: 98px;
+}
+
+.btn-symbol-backspace,
+.btn-Caps-Lock{
+    width: 9vw;
+    max-width: 157.217px;
+}
+
+.btn-symbol-enter{
+    width: 12vw;
+    max-width: 209.593px;
+}
+
+.btn-symbol-shift-left{
+    width: 13.75vw;
+}
+
+.btn-symbol-tab,
+.btn-symbol-slash,
+.btn-symbol-shift-rigth,
+.btn-symbol-ctrl-left,
+.btn-symbol-ctrl-right{
+    width: 7.25vw;
+    max-width: 125.717px;
+}
+
+.btn-symbol-ctrl-left{
+    margin-right: 14vw;
+}
+
+.button-presed{
+    background-color: rgb(183, 155, 93);
+    color: rgb(73, 74, 82);
+    transform: scale(.97);
+}
+
+
+.btn-Caps-Lock{
+    position: relative;
+}
+
+.btn-Caps-Lock::before{
+    position: absolute;
+    content: "";
+    top: calc(50% - 3px);
+    right: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    opacity: .5;
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-Caps-Lock.active-capsLock::before{
+    opacity: 1;
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.5);
+}
+
+.btn-symbol-space{
+    width: 39.74vw;
+}
