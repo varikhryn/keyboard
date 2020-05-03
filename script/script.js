@@ -18,6 +18,10 @@ i1.oninput = () => {
     }
 }
 
+i1.onfocus = () => {
+    blcKey.style.display = 'flex';
+}
+
 i1.onkeydown = () => {
     addClassAction(event);
     eventCTRL(event);
@@ -62,6 +66,8 @@ i1.addEventListener('focusout', function (event) {
         let tab = document.querySelector('.btn-symbol-tab');
         tab.classList.remove('button-presed');
     }, 100);
+
+    blcKey.style.display = 'none';
 });
 
 

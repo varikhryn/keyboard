@@ -25,6 +25,10 @@ body{
     position: relative;
 }
 
+.section-main__item-input{
+    margin-bottom: 50px;
+}
+
 .section-main__item input{
     background-color: transparent;
     outline: none;
@@ -64,7 +68,7 @@ body{
 }
 
 #my-keyboard{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
